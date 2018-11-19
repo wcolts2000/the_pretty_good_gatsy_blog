@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import TypeWriterDiv from '../components/TypeWriterDiv'
 import './index.css'
+import '../components/header.css'
 
 const IndexPage = () => (
   <Layout>

@@ -16,7 +16,14 @@
   padding: 0.25rem 3rem;
   font-size: 0.75rem;
   display: inline-block;
+  transition: all 0.3s ease-in-out;
 }
+
+.footer-container a:hover {
+  color: rgb(230, 195, 0);
+  transform: scale(1.1);
+}
+
 .footer-left {
   order: 2;
   width: 100%;
@@ -52,4 +59,9 @@
   color: rgba(204, 204, 204, 0.555);
   font-size: 0.7rem;
   margin: 10px 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-container h4:hover {
+  color: rgb(230, 195, 0);
 }
