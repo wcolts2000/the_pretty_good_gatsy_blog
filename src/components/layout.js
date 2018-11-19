@@ -16,8 +16,8 @@ import {
   faPenNib,
 } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import Footer from './footer'
-import Header from './header'
+import Footer from './Footer/footer'
+import Header from './Header/header'
 import './layout.css'
 
 library.add(
