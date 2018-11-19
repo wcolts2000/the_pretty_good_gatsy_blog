@@ -47,9 +47,9 @@ const Subheading = styled.h2`
 `
 
 class TypeWriterDiv extends Component {
-  constructor(props) {
-    super(props)
-  }
+  // constructor(props) {
+  //   super(props)
+  // }
   componentDidMount() {
     // If you want to pass more options as props, simply add
     // your desired props to this destructuring assignment.
@@ -76,7 +76,7 @@ class TypeWriterDiv extends Component {
       <Hero>
         <TypeWrapper>
           <h1>
-            Sean Pheneger The &nbsp;
+            Sean Pheneger : &nbsp;
             <Span
               ref={el => {
                 this.el = el
