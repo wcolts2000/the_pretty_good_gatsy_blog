@@ -7,3 +7,24 @@
     'sans-serif';
   font-weight: bold;
 }
+
+.card-holder {
+  width: 100%;
+  display: flex;
+  height: 340px;
+  padding: 60px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 950px) {
+  .card-holder {
+    height: 600px;
+  }
+}
+
+@media (max-width: 750px) {
+  .card-holder {
+    height: 1130px;
+    padding: 15px;
+  }
+}

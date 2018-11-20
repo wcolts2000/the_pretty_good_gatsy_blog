@@ -19,7 +19,7 @@ const Footer = () => {
         <a
           href="https://github.com/wcolts2000?tab=repositories"
           target="_blank"
-          rel="noopener nofollower"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon className="footer-icon" icon={['fab', 'github']} />
         </a>
@@ -29,7 +29,7 @@ const Footer = () => {
         <a
           href="https://www.linkedin.com/in/sean-pheneger-5393a089/"
           target="_blank"
-          rel="noopener nofollower"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon className="footer-icon" icon={['fab', 'linkedin']} />
         </a>
