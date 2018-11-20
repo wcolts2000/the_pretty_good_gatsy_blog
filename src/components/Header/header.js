@@ -20,8 +20,8 @@ const Header = ({ siteTitle }) => (
         <Link className="header-nav" to="/projects/">
           Projects
         </Link>
-        <Link className="header-nav" to="/blogs/" style={{ paddingRight: '0' }}>
-          Blogs
+        <Link className="header-nav" to="/blog/" style={{ paddingRight: '0' }}>
+          Blog
         </Link>
       </div>
     </div>

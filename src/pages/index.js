@@ -34,7 +34,7 @@ const IndexPage = () => (
         ]}
       />
       <Card
-        name={['blogs']}
+        name={['blog']}
         details={['A look into the world of an online bootcamp student']}
         cta={['Blogs about the different sections of study and projects']}
         style={{ marginRight: '0' }}
