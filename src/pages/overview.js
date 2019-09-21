@@ -132,7 +132,7 @@ const Overview = () => (
         </p>
         <p>
           This was awesome! I had found what I needed and it was actually pretty
-          straight forward. This mysterious this that was programming was
+          straight forward. This mysterious thing that was programming was
           actually not that scary. I wanted more. So more videos and reading and
           a few Udemy courses on full-stack development and JavaScript and I
           came across a Programming YouTuber by the name of{' '}
