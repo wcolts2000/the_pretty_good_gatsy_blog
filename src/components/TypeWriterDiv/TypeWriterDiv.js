@@ -22,7 +22,7 @@ const TypeWrapper = styled.div`
   height: 100%;
   padding: 0 3rem;
 
-  @:media (min-width: 800px) {
+  @media (min-width: 800px) {
     padding: 0 1rem;
   }
 `
@@ -42,7 +42,7 @@ const Span = styled.span`
 
 const Subheading = styled.h2`
   font-weight: 200;
-  margin" 0.4rem;
+  margin: 0.4rem;
   font-size: 1rem;
 `
 
@@ -58,7 +58,7 @@ class TypeWriterDiv extends Component {
     const options = {
       strings: strings,
       typeSpeed: 80,
-      backSpeed: 80,
+      backSpeed: 60,
       loop: this.props,
     }
     // this.el refers to the <span> in the render() method
@@ -83,8 +83,8 @@ class TypeWriterDiv extends Component {
               }}
             />
           </h1>
-          <Intro>Welcome To My Blog</Intro>
-          <Subheading>Journeys through Lambda School</Subheading>
+          <Intro>Welcome To My Website, Blog, and References</Intro>
+          <Subheading>Becoming a Full Stack Developer</Subheading>
         </TypeWrapper>
       </Hero>
     )

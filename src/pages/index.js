@@ -11,32 +11,34 @@ const IndexPage = () => (
       options={{ loop: true }}
     />
     <div className="card-holder">
+      <h1>Cheat Sheets, Code Samples, Resources and More</h1>
       {/* <Card /> */}
       <Card
-        name={['overview']}
+        name={['About Me']}
+        link={['overview']}
         details={[
-          'Go this way to get a little more info about me and my journey',
+          'A little info about me and my journey of becoming a software developer',
         ]}
         cta={['A little about me, Lambda School, and this crazy journey']}
       />
       <Card
         name={['technologies']}
-        details={["The different technologies I'm currently exploring"]}
+        details={["The different tech stacks I'm currently exploring"]}
         cta={[
-          "Just the beginning of the technologies I'll be learning and teaching myself",
+          "Notes, Cheat Sheets, and Snippets in various libraries and frameworks I work with",
         ]}
       />
       <Card
         name={['projects']}
-        details={['Explore Some Lambda Projects and Personal Projects']}
+        details={['Explore Some of the Projects I am working on']}
         cta={[
-          'This way for the portfolio, some are complete, most still need polishing',
+          'This way for some of the projects I have created and some team projects I have been a part of',
         ]}
       />
       <Card
         name={['blog']}
-        details={['A look into the world of an online bootcamp student']}
-        cta={['Blogs about the different sections of study and projects']}
+        details={['Compilation of references and little snippets with tips and tricks I come across and discover']}
+        cta={['Blogs about the different gems I come across and code snippets']}
         style={{ marginRight: '0' }}
       />
     </div>

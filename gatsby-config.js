@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'The Pretty Good Gatsby Blog',
+    title: 'A Full Stack Developers Blog',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

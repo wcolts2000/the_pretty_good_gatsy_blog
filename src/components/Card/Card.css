@@ -2,42 +2,27 @@
   perspective: 800px;
   -moz-perspective: 800px;
   position: relative;
-  height: 230px;
+  height: 430px;
   margin-bottom: 2rem;
-  width: 200px;
-  /* margin-right: 40px; */
-  flex: 1;
+  width: 280px;
   min-width: 20%;
+  margin: 0 auto 50px; 
 }
 
 .card-side {
   font-family: sans-serif;
-  height: 230px;
+  height: 430px;
   transition: all 1.2s ease;
   position: absolute;
   top: 0;
   left: 0;
-  width: 200px;
+  width: 280px;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
-}
-
-@media (max-width: 950px) {
-  .card,
-  .card-side {
-    min-width: 45%;
-    width: 300px;
-  }
-}
-
-@media (max-width: 750px) {
-  .card,
-  .card-side {
-    min-width: 100%;
-  }
+  margin: 0 auto 50px; 
 }
 
 .card:hover .front {
@@ -59,15 +44,15 @@
 
 .card-picture {
   background-size: cover;
-  height: 100px;
+  height: 140px;
   background-blend-mode: screen;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  background-image: linear-gradient(to left top, #feff04, #e0e078),
+  background-image: linear-gradient(to left top, #feff04, #e0e07880),
     url('https://www.pexels.com/photo/antique-blank-camera-classic-269923/');
 }
 
 .card-heading {
-  font-size: 14px;
+  font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
   color: #090909;
@@ -75,7 +60,6 @@
   top: 60px;
   right: 10px;
   text-align: right;
-  width: 75%;
 }
 
 .card-heading-span {
@@ -94,8 +78,9 @@
   color: #ccc;
   margin: 0 auto;
   text-align: center;
-  font-size: 12px;
-  padding: 2px;
+  font-size: 22px;
+  line-height: 1.5;
+  padding: 40px 2px;
 }
 
 .card-cta {
@@ -115,8 +100,9 @@
 }
 
 .card-cta-box p {
-  font-size: 14px;
+  font-size: 24px;
   font-weight: bold;
+  line-height: 1.5;
 }
 
 .card-cta-btn {

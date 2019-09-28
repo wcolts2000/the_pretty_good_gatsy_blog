@@ -9,12 +9,6 @@ const FooterComponent = styled.footer``
 const Footer = () => {
   return (
     <FooterComponent className="footer-container">
-      <div className="footer-left">
-        <Link to="/overview/">Overview</Link>
-        <Link to="/technologies/">Technologies</Link>
-        <Link to="/projects/">Projects</Link>
-        <Link to="/blog/">Blog</Link>
-      </div>
       <div className="footer-right">
         <a
           href="https://github.com/wcolts2000?tab=repositories"

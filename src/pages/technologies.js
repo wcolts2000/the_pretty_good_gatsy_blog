@@ -5,9 +5,8 @@ import Layout from '../components/layout'
 
 const Technologies = () => (
   <Layout>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <h1>Various Tech Stacks and Library References and Notes</h1>
+    <p>Here you will find information about various javascript and python libraries and fundamentals</p>
   </Layout>
 )
 

@@ -5,9 +5,8 @@ import Layout from '../components/layout'
 
 const Blogs = () => (
   <Layout>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <h1>Blogs and Code Snippets</h1>
+    <p>A compilation of cool techniques and snippets I have found useful</p>
   </Layout>
 )
 
