@@ -12,15 +12,15 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding: 60px 30px;
-  background: linear-gradient( rgb(2, 247, 255), rgb(0, 38, 63));
-  flex-wrap: wrap;
-  text-align: center;
+  align-items: stretch;
+  padding: 20px 30px;
+  background: white;
+  min-height: 400px;
 }
 
-.card-holder h1 {
-  width: 100%;
-  margin-bottom: 100px;
+h1.indexHeader {
+  margin: 1rem;
   color: white;
   letter-spacing: 1.5px;
+  color: black;
 }

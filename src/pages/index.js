@@ -10,9 +10,8 @@ const IndexPage = () => (
       strings={['Designer', 'Creator', 'Developer']}
       options={{ loop: true }}
     />
+    <h1 className="indexHeader">Cheat Sheets, Code Samples, Resources and More</h1>
     <div className="card-holder">
-      <h1>Cheat Sheets, Code Samples, Resources and More</h1>
-      {/* <Card /> */}
       <Card
         name={['About Me']}
         link={['overview']}

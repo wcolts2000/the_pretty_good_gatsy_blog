@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: 'A Full Stack Developers Blog',
+    author: 'Sean Pheneger'
   },
   plugins: [
+    'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,

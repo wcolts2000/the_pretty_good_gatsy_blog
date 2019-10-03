@@ -7,7 +7,7 @@ const Blogs = () => (
   <Layout>
     <h1>Blogs and Code Snippets</h1>
     <p>A compilation of cool techniques and snippets I have found useful</p>
-  </Layout>
+  </Layout> 
 )
 
 export default Blogs

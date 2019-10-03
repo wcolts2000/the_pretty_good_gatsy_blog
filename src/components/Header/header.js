@@ -1,32 +1,44 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import './header.css'
+import { Link, graphql, useStaticQuery } from 'gatsby'
+import headerStyles from './header.module.scss'
 
-const Header = ({ siteTitle }) => (
-  <div style={{ background: '#090909' }}>
-    <header className="header">
-      <h1 style={{ margin: 0 }}>
-        <Link to="/" className="header-link">
-          {siteTitle}
-        </Link>
-      </h1>
-      <div className="nav-links">
-        <Link to="/overview/" className="header-nav top">
-          About Me
-        </Link>
-        <Link to="/technologies/" className="header-nav">
-          Technologies
-        </Link>
-        <Link className="header-nav" to="/projects/">
-          Projects
-        </Link>
-        <Link className="header-nav" to="/blog/" style={{ paddingRight: '0' }}>
-          Blog
-        </Link>
-      </div>
-    </header>
-    <div className="spacer">&nbsp;</div>
-  </div>
-)
+const Header = () => {
+  
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
+  return (
+    <div>
+      <header className={headerStyles.header}>
+        <h2 className={headerStyles.headerH2}>
+          <Link to="/" className={headerStyles.headerLink}>
+            {data.site.siteMetadata.title}
+          </Link>
+        </h2>
+        <div className="nav-links">
+          <Link to="/overview/" className={`${headerStyles.headerNav} ${headerStyles.top}`}>
+            About Me
+          </Link>
+          <Link to="/technologies/" className={headerStyles.headerNav}>
+            Technologies
+          </Link>
+          <Link className={headerStyles.headerNav} to="/projects/">
+            Projects
+          </Link>
+          <Link className={headerStyles.headerNav} to="/blog/" style={{ paddingRight: '0' }}>
+            Blog
+          </Link>
+        </div>
+      </header>
+      <div className={headerStyles.spacer}>&nbsp;</div>
+    </div>
+  )}
 
 export default Header

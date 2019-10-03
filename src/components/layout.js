@@ -20,6 +20,8 @@ import Footer from './Footer/footer'
 import Header from './Header/header'
 import './layout.css'
 
+import '../styles/index.scss'
+
 library.add(
   fab,
   faComments,
@@ -65,13 +67,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 1500,
-            paddingTop: 0,
-          }}
-        >
+        <div>
           {children}
         </div>
         <Footer />

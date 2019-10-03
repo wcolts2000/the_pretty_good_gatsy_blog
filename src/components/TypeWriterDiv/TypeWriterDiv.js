@@ -6,13 +6,15 @@ const Hero = styled.div`
   font-family: 'Railway', sans-serif;
   height: 400px;
   width: 100%;
-  background-image: url('https://image.ibb.co/n5A2HU/showcase.jpg');
+  background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.9)), url('https://image.ibb.co/n5A2HU/showcase.jpg');
+  
+  background-color: #000;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
   color: #ccc;
-  text-shadow: -2px 2px 5px #000;
+  text-shadow: -2px 2px 2px #000;
 `
 
 const TypeWrapper = styled.div`
@@ -25,12 +27,16 @@ const TypeWrapper = styled.div`
   @media (min-width: 800px) {
     padding: 0 1rem;
   }
+
+  h1 {
+    margin-bottom: 5px;
+  }
 `
 
 const Intro = styled.h2`
   font-weight: 200;
-  margin: 0.4rem;
-  font-size: 1.5rem;
+  margin: 0.4rem 0 1.5rem;
+  font-size: 1.8rem;
   color: #aaa;
 `
 
@@ -42,8 +48,15 @@ const Span = styled.span`
 
 const Subheading = styled.h2`
   font-weight: 200;
-  margin: 0.4rem;
-  font-size: 1rem;
+  margin: 0.4rem 0;
+  font-size: 1.2rem;
+  width: 60%;
+  /* color: gold; */
+  line-height: 1.5;
+
+  @media (max-width: 800px) {
+    width: unset;
+  }
 `
 
 class TypeWriterDiv extends Component {
@@ -83,8 +96,8 @@ class TypeWriterDiv extends Component {
               }}
             />
           </h1>
-          <Intro>Welcome To My Website, Blog, and References</Intro>
-          <Subheading>Becoming a Full Stack Developer</Subheading>
+          <Intro>Welcome To My Website.</Intro>
+          <Subheading>This is a continuing work containing references, links to my projects and articles I write about what I learn in my journey as a developer.</Subheading>
         </TypeWrapper>
       </Hero>
     )
