@@ -633,3 +633,11 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.wrapper {
+  min-height: calc(100vh - 70px - 83px);
+  @media only screen and (max-width: 480px) {
+    min-height: calc(100vh - 70px - 68px);
+    
+  }
+}

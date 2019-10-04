@@ -18,7 +18,7 @@ import {
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import Footer from './Footer/footer'
 import Header from './Header/header'
-import './layout.css'
+import layoutStyles from './layout.module.scss'
 
 import '../styles/index.scss'
 
@@ -66,9 +66,12 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div>
-          {children}
+        <div className={layoutStyles.wrapper}>
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <div>
+            {children}
+          </div>
+
         </div>
         <Footer />
       </>
