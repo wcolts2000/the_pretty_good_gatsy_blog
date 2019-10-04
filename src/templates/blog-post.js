@@ -1,33 +1,28 @@
 import React from 'react'
 import Layout from './../components/layout';
-import {grapgql, useStaticQuery} from 'gatsby'
+import {graphql} from 'gatsby'
 
 
-function Blog() {
-
-  const data = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark {
-        edges {
-          node {
-            frontmatter {
-              title
-              date
-            }
-          html
-          excerpt
-          fields {
-            slug
-          }
-          }
-        }
+export const query = graphql`
+  query ($slug: String!) {
+    markdownRemark (fields: {slug: { eq: $slug}}) {
+      frontmatter {
+        title
+        date
       }
+      html
     }
-  `)
-  console.log("FFFFFFFFFFFF",data)
+  }
+`
+
+function Blog(props) {
+  console.log("PROPS: ", props)
+
   return (
     <Layout>
-      blog data here
+      <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+      <p>{props.data.markdownRemark.frontmatter.date}</p>
+      <div dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}} />
     </Layout>
   )
 }
