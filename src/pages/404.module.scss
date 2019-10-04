@@ -1,0 +1,43 @@
+.wrapper {
+  min-height: calc(100vh - 70px - 150px);
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.2)),  url('../images/lost.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.lost-header {
+  font-size: 4rem;
+}
+
+.lost-header, .lost-para {
+  text-shadow: 2px 2px 2px black;
+}
+
+.lost-btn {
+  padding: 1rem 3rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.5rem;
+  font-weight: bold;
+  background:white;
+  color: black;
+  position: relative;
+  top: 0;
+
+  &:hover {
+    opacity: .8;
+    top: 2px;
+  }
+
+  &:active {
+    opacity: 1;
+    top: 4px;
+  }
+}
+
