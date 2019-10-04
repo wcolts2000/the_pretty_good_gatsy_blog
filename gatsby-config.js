@@ -4,6 +4,13 @@ module.exports = {
     author: 'Sean Pheneger'
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: '',
+        accessToken: ''
+      }
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     {
