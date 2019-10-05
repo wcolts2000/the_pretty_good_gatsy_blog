@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
@@ -49,23 +48,6 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            {
-              name: 'description',
-              content:
-                "Sean Pheneger's Blog: Developer, Lambda School Student, Full Stack Web Development and Computer Science",
-            },
-            {
-              name: 'keywords',
-              content:
-                'blog, development, full stack web, designer, front-end, back-end, databases, websites, freelancing',
-            },
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
         <div className={layoutStyles.wrapper}>
           <Header siteTitle={data.site.siteMetadata.title} />
           <div>

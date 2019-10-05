@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/layout'
+import Head from '../components/head'
 
 const CmsBlogs = () => {
   const data = useStaticQuery(graphql`
@@ -24,6 +25,7 @@ const CmsBlogs = () => {
   `)
   return (
     <Layout>
+      <Head title="Contentful CMS Blog" />
       <h1>Blogs and Code Snippets</h1>
       <p>A compilation of cool techniques and snippets I have found useful</p>
       <ol>

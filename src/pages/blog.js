@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/layout'
+import Head from '../components/head'
 
 const Blogs = () => {
   const data = useStaticQuery(graphql`
@@ -23,6 +24,7 @@ const Blogs = () => {
   `)
   return (
     <Layout>
+      <Head title="Markdown Blog" />
       <h1>Blogs and Code Snippets</h1>
       <p>A compilation of cool techniques and snippets I have found useful</p>
       <ol>

@@ -3,9 +3,12 @@ import Layout from '../components/layout'
 import TypeWriterDiv from '../components/TypeWriterDiv/TypeWriterDiv'
 import './index.css'
 import Card from '../components/Card/Card'
+import Head from '../components/head'
+
 
 const IndexPage = () => (
   <Layout>
+    <Head title="Home"/>
     <TypeWriterDiv
       strings={['Designer', 'Creator', 'Developer']}
       options={{ loop: true }}

@@ -2,9 +2,11 @@ import React from 'react'
 import {Link} from 'gatsby';
 import Layout from '../components/layout'
 import lostPageStyles from './404.module.scss'
+import Head from '../components/head';
 
 const NotFoundPage = () => (
   <Layout>
+    <Head title="404" />
     <section className={lostPageStyles.wrapper}>
 
       <h1 className={lostPageStyles.lostHeader}>NOT FOUND</h1>

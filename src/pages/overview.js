@@ -2,9 +2,11 @@ import React from 'react'
 import './overview.css'
 
 import Layout from '../components/layout'
+import Head from '../components/head'
 
 const Overview = () => (
   <Layout>
+    <Head title="About Me" />
     <div className="overview-container">
       <div className="overview-intro">
         <h1>A Little About Me...</h1>
