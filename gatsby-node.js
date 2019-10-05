@@ -38,4 +38,27 @@ module.exports.createPages = async ({graphql, actions}) => {
       }
     })
   })
+  const cmsBlogTemplate = path.resolve('./src/templates/cms-blog-template.js')
+
+  const cmsRes = await graphql(`
+    query {
+      allContentfulBlogPost {
+        edges {
+          node {
+            slug
+          }
+        }
+      }
+    }
+  `)
+
+  cmsRes.data.allContentfulBlogPost.edges.forEach(edge => {
+    createPage({
+      component: cmsBlogTemplate,
+      path: `cms-blog/${edge.node.slug}`,
+      context: {
+        slug: edge.node.slug
+      }
+    })
+  })
 }
