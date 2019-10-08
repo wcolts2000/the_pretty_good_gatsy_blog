@@ -1,39 +1,59 @@
 .flat-card {
   width: 20%;
   overflow: hidden;
-  padding: 2rem;
+  padding: 1rem;
   cursor: pointer;
   transition: 0.3s;
+  position: relative;
+
   &:hover {
-    transform: scale(1.2);
+    // -webkit-transform: scale(1.2);
+    // transform: scale(1.2);
     z-index: 100;
+    padding: .5rem;
+    // width: auto;
+    overflow: visible;
+  }
+
+  @media (max-width: 650px) {
+    width: 33.3%;
+    flex-grow: 1;
   }
 
   svg {
     position: relative;
-    top: 50%;
     transition: .3s;
-    transform: translate(0, 175%);
+    transform: translate(0, 100%);
     font-size: 3rem;
   }
   &:hover svg {
-    transform: translate(0, -30%);
+    transform: translate(0, -65%);
     padding: .6rem;
     border-radius: 50%;  
-    background: white; 
+    background: inherit; 
   }
 
   .bottom-container {
     color: black;
     position: relative;
     display: hidden;
-    transition: .3s;
+    transition: top .3s, opacity .75s;
     top: 250px;
     opacity: 0;
     
     h2 {
       font-size: 1.75rem;
       white-space: nowrap;    
+    }
+
+    @media (max-width: 900px) {
+      h2 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: .9rem;
+      }
     }
   }
   
