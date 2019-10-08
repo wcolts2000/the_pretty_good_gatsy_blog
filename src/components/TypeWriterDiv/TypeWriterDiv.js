@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Typed from 'typed.js'
+import bg from '../../images/reno.jpg'
 
 const Hero = styled.div`
   font-family: 'Railway', sans-serif;
   height: 400px;
   width: 100%;
-  background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.9)), url('https://image.ibb.co/n5A2HU/showcase.jpg');
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url(${bg});
   
   background-color: #000;
   background-position: center center;

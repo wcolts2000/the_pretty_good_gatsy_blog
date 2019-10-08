@@ -1,0 +1,61 @@
+.flat-card {
+  width: 20%;
+  overflow: hidden;
+  padding: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.2);
+    z-index: 100;
+  }
+
+  svg {
+    position: relative;
+    top: 50%;
+    transition: .3s;
+    transform: translate(0, 175%);
+    font-size: 3rem;
+  }
+  &:hover svg {
+    transform: translate(0, -30%);
+    padding: .6rem;
+    border-radius: 50%;  
+    background: white; 
+  }
+
+  .bottom-container {
+    color: black;
+    position: relative;
+    display: hidden;
+    transition: .3s;
+    top: 250px;
+    opacity: 0;
+    
+    h2 {
+      font-size: 1.75rem;
+      white-space: nowrap;    
+    }
+  }
+  
+  &:hover .bottom-container {
+    opacity: 1;
+    top: 0;
+    display: block;
+  }
+}
+
+.yellow {
+  background: yellow;
+}
+.orange {
+  background: orange;
+}
+.red {
+  background: crimson;
+}
+.lightgreen {
+  background: lightgreen;
+}
+.rebeccapurple {
+  background: rebeccapurple;
+}

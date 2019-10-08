@@ -1,0 +1,43 @@
+.card-link {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'sans-serif';
+  font-weight: bold;
+}
+
+.card-holder {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 20px 30px;
+  background: white;
+  min-height: 400px;
+}
+
+h1.indexHeader {
+  margin: 0 auto 6rem;
+  letter-spacing: 1.5px;
+  color: black;
+  padding: 3rem;
+  display: inline-block;
+  background: bisque;
+  outline: 2rem solid rgba(0,0,0,.6);
+  font-weight: 200;
+}
+
+.hyperlink-container {
+  text-align: center;
+  background: url('./../images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 6rem;
+}
+
+.links-cards-container {
+  display: flex;  
+}

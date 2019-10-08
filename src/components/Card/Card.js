@@ -49,7 +49,7 @@ const Card = props => (
         <div className="card-cta-box">
           <p>{props.cta}</p>
           <Link
-            to={`\/${props.link ? props.link : props.name}\/`}
+            to={`${props.link ? props.link : props.name}`}
             className="card-cta-btn"
             onMouseEnter={e => (e.target.style = 'transform: translateY(-3px)')}
             onMouseDown={e => (e.target.style = 'transform: translateY(-1px)')}

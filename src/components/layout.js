@@ -13,6 +13,11 @@ import {
   faUsers,
   faPhone,
   faPenNib,
+  faBookReader,
+  faTools,
+  faAsterisk,
+  faLaptopCode,
+  faPortrait
 } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import Footer from './Footer/footer'
@@ -23,6 +28,11 @@ import '../styles/index.scss'
 
 library.add(
   fab,
+  faPortrait,
+  faAsterisk,
+  faLaptopCode,
+  faTools,
+  faBookReader,
   faComments,
   faDatabase,
   faEnvelope,
