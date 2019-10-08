@@ -634,10 +634,8 @@ pre tt:after {
   }
 }
 
-.wrapper {
-  min-height: calc(100vh - 70px - 83px);
-  @media only screen and (max-width: 480px) {
-    min-height: calc(100vh - 70px - 68px);
-    
-  }
+body {
+  background: lightseagreen;
 }
+
+
