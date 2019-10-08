@@ -23,17 +23,20 @@ const Header = () => {
           </Link>
         </h2>
         <div className="nav-links">
-          <Link to="/overview/" className={`${headerStyles.headerNav} ${headerStyles.top}`}>
-            About Me
-          </Link>
-          <Link to="/technologies/" className={headerStyles.headerNav}>
-            Technologies
+          <Link to="/blog/" className={headerStyles.headerNav}>
+            Notes
           </Link>
           <Link className={headerStyles.headerNav} to="/projects/">
             Projects
           </Link>
-          <Link className={headerStyles.headerNav} to="/blog/" style={{ paddingRight: '0' }}>
-            Blog
+          <Link className={headerStyles.headerNav} to="/technologies/">
+            Tools
+          </Link>
+          <Link className={headerStyles.headerNav} to="/references/">
+            References
+          </Link>
+          <Link to="/overview/" className={`${headerStyles.headerNav} ${headerStyles.top}`}  style={{ paddingRight: '0' }}>
+            About Me
           </Link>
         </div>
       </header>

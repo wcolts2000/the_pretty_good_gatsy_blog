@@ -7,11 +7,8 @@
   position: relative;
 
   &:hover {
-    // -webkit-transform: scale(1.2);
-    // transform: scale(1.2);
     z-index: 100;
     padding: .5rem;
-    // width: auto;
     overflow: visible;
   }
 
