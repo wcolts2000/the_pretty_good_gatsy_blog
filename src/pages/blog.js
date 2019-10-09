@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import blogStyles from './blog.module.scss'
-
 import Layout from '../components/layout'
 import Head from '../components/head'
 
 const Blogs = () => {
+  
   const data = useStaticQuery(graphql`
   query {
     allMarkdownRemark {
@@ -23,12 +23,16 @@ const Blogs = () => {
     }
   }
   `)
+
   return (
     <Layout>
       <Head title="Markdown Blog" />
       <section className={blogStyles.container}>
+        
         <h1>Notes, Blogs, and Code Snippets</h1>
-        <p>A compilation of cool techniques and snippets I have found useful</p>
+        <p>Notes from Lambda School bootcamp, various tutorials, courses, and my
+            own studies. In them you will find links to the source code, live site examples, and code snippets that may be mentioned in the post.
+        </p>
         <ol>
           {data.allMarkdownRemark.edges.map((post, i) => (
             <Link key={i} to={`blog/${post.node.fields.slug}`}>
