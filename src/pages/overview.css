@@ -1,21 +1,27 @@
+img {
+  width: 100%;
+  height: auto;
+}
 .overview-container {
   display: flex;
   flex-wrap: wrap;
   max-width: 1000px;
-  margin: 30px auto 0;
+  margin: 0 auto;
+  background: white;
   font-family: sans-serif;
+  padding: 2rem;
+  justify-content: space-around;
 }
 
 .overview-intro {
   width: 45%;
   padding: 35px;
-  margin: 25px;
   border: 8px double #090909;
 }
 
 .overview-img {
   margin: 15px;
-  max-width: 45%;
+  width: 45%;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: -1px 2px 10px rgba(0, 0, 0, 0.2);
@@ -30,6 +36,9 @@
 }
 
 @media (max-width: 850px) {
+  .overview-intro {
+    width: 100%;
+  }
   .overview-intro h1 {
     font-size: 30px;
   }
@@ -38,7 +47,7 @@
   }
 
   .overview-img {
-    width: 40%;
+    display: none;
   }
 }
 
