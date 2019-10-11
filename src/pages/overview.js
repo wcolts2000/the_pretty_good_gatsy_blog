@@ -1,5 +1,5 @@
 import React from 'react'
-import './overview.css'
+import overviewStyles from './overview.module.scss'
 
 import Layout from '../components/layout'
 import Head from '../components/head'
@@ -7,19 +7,19 @@ import Head from '../components/head'
 const Overview = () => (
   <Layout>
     <Head title="About Me" />
-    <div className="overview-container">
-      <div className="overview-intro">
+    <div className={overviewStyles.overviewContainer}>
+      <div className={overviewStyles.overviewIntro}>
         <h1>A Little About Me...</h1>
         <h2>
           So how in the world did I end up wanting to learn web development?
         </h2>
       </div>
       <img
-        className="overview-img"
+        className={overviewStyles.overviewImg}
         src="https://images.pexels.com/photos/326424/pexels-photo-326424.jpeg?auto=compress&cs=tinysrgb&h=350"
         alt="desk with computer and notepad"
       />
-      <div className="overview-intro-container">
+      <div className={overviewStyles.overviewIntroContainer}>
         <p>
           I was hired on at a large format printing company that was just
           starting up back in 2013 to be a sales rep for their wholesale
@@ -70,15 +70,15 @@ const Overview = () => (
           he had picked up years before...
         </p>
       </div>
-      <h2 className="face-palm-header">
+      <h2 className={overviewStyles.facePalmHeader}>
         Wait wait wait... did you read that right? Years before?{' '}
       </h2>
       <img
         src="https://images.pexels.com/photos/23180/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
         alt="man holding his face"
-        className="face-palm"
+        className={overviewStyles.facePalm}
       />
-      <div className="container-right">
+      <div className={overviewStyles.containerRight}>
         <p>
           Well my friend, thats right. What he knew was how to use photoshop and
           the slice tool and bring that into Adobe Dreamweaver CS6 and convert
@@ -94,7 +94,7 @@ const Overview = () => (
           it and for that I am eternally grateful.
         </p>
       </div>
-      <div className="whats-next">
+      <div className={overviewStyles.whatsNext}>
         <h2>Ok, so now that I have some interest in it, what next?</h2>
         <p>
           Well, sad to say, there was actually a couple websites that went out
@@ -149,7 +149,7 @@ const Overview = () => (
           interesting tuition model and curriculum.
         </p>
       </div>
-      <div className="lambda-intro">
+      <div className={overviewStyles.lambdaIntro}>
         <h2>Enter Lambda...</h2>
         <p>
           So Lambda offers a free 2 week web development mini boot camp that
@@ -169,7 +169,7 @@ const Overview = () => (
           few of the ones that were thought highly of have gone under.
         </p>
       </div>
-      <div className="wrap-up">
+      <div className={overviewStyles.wrapUp}>
         <h2>So what makes Lambda different?</h2>
         <img
           src="https://images.pexels.com/photos/997725/pexels-photo-997725.jpeg?auto=compress&cs=tinysrgb&h=350"
@@ -245,7 +245,7 @@ const Overview = () => (
           Course, an Android Development and Computer Science Course, an IOS
           Development and Computer Science Course, a UX Design Course, and are
           looking to expand even more. For more info on these check out{' '}
-          <a href="https://lambdaschool.com/about/">Lambda School's Website</a>{' '}
+          <a href="https://lambdaschool.com/about/" target="_blank" rel="noopener noreferrer">Lambda School's Website</a>{' '}
           yourself to see what they have to offer. I would highly recommend it,
           even for those coming in with no prior knowledge at all, as there are
           quite a few in every cohort that comes through and lambda has done an

@@ -31,7 +31,7 @@ const Blogs = () => {
         
         <h1>Notes, Blogs, and Code Snippets</h1>
         <p>Notes from Lambda School bootcamp, various tutorials, courses, and my
-            own studies. In them you will find links to the source code, live site examples, and code snippets that may be mentioned in the post.
+            own studies. In them you will find links to the source code, live site examples, and code snippets that may wbe mentioned in the post.
         </p>
         <ol>
           {data.allMarkdownRemark.edges.map((post, i) => (
