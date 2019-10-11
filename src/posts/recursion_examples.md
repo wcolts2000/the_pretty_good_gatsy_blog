@@ -1,5 +1,5 @@
 ---
-title: "Recursion Class Notes"
+title: "Recursion Class Examples"
 date: "2019-7-18"
 ---
 
