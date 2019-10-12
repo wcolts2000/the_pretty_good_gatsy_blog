@@ -35,3 +35,40 @@ code {
   background: black;
   padding: .2rem .5rem;
 }
+
+table {
+  background: #0f0f0f;
+  display: block;
+  width: 100%;
+  overflow: auto;
+  border-spacing: 0;
+  // border-collapse: collapse;
+}
+
+thead, tbody {
+  padding: 1rem;
+
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+  border: 1px solid #dfe2e5;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+  // background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}

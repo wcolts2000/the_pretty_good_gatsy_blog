@@ -423,7 +423,6 @@ table {
   margin-bottom: 1.45rem;
   font-size: 1rem;
   line-height: 1.45rem;
-  border-collapse: collapse;
   width: 100%;
 }
 fieldset {
@@ -582,14 +581,6 @@ th {
   padding-right: 0.96667rem;
   padding-top: 0.725rem;
   padding-bottom: calc(0.725rem - 1px);
-}
-th:first-child,
-td:first-child {
-  padding-left: 0;
-}
-th:last-child,
-td:last-child {
-  padding-right: 0;
 }
 tt,
 code {
