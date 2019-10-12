@@ -37,7 +37,6 @@ code {
 }
 
 table {
-  background: #0f0f0f;
   display: block;
   width: 100%;
   overflow: auto;
@@ -55,6 +54,7 @@ thead {
 }
 
 tbody {
+  background: #0f0f0f;
   display: table-row-group;
   vertical-align: middle;
   border-color: inherit;
