@@ -62,7 +62,7 @@ date: "2018-12-23"
 
 ## Packages used in this sample
 
-_Note: When installing packages via npm you can use `npm i -D <package_name>` as shorthand for `npm install --save-dev <package_name>` to save a dev dependency and `npm i <package_name>` in place of `npm install <package_name>`, save those keystrokes where possible_
+Note: When installing packages via npm you can use ` npm i -D <package_name> `   as shorthand for   ` npm install --save-dev <package_name> ` to save a dev dependency and ` npm i <package_name> `  in place of ` npm install <package_name> ` , save those keystrokes where possible
 
 | Package Name | Dependency Type |
 | ------------ | --------------- |
