@@ -45,16 +45,13 @@ table {
   // border-collapse: collapse;
 }
 
-thead, tbody {
-  padding: 1rem;
-
-}
 
 thead {
   display: table-header-group;
   vertical-align: middle;
-  border-color: inherit;
-  border: 1px solid #dfe2e5;
+  border: 1px solid #0f0f0f;
+  background: white;
+  color: black;
 }
 
 tbody {
