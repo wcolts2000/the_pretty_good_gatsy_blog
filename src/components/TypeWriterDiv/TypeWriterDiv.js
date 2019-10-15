@@ -1,21 +1,26 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Typed from 'typed.js'
-import bg from '../../images/reno.jpg'
+// import bg from '../../images/reno.jpg'
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 const Hero = styled.div`
   font-family: 'Railway', sans-serif;
-  height: 400px;
+  position: relative;
+  height: 600px;
   width: 100%;
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url(${bg});
-  
-  background-color: #000;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   overflow: hidden;
   color: #ccc;
   text-shadow: -2px 2px 2px #000;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 `
 
 const TypeWrapper = styled.div`
@@ -24,6 +29,8 @@ const TypeWrapper = styled.div`
   justify-content: center;
   height: 100%;
   padding: 0 3rem;
+  position: absolute;
+  top: 0;
 
   @media (min-width: 800px) {
     padding: 0 1rem;
@@ -87,20 +94,51 @@ class TypeWriterDiv extends Component {
 
   render() {
     return (
-      <Hero>
-        <TypeWrapper>
-          <h1>
-            Sean Pheneger : &nbsp;
-            <Span
-              ref={el => {
-                this.el = el
-              }}
-            />
-          </h1>
-          <Intro>Welcome To My Website.</Intro>
-          <Subheading>This is a continuing work containing references, links to my projects and articles I write about what I learn in my journey as a developer.</Subheading>
-        </TypeWrapper>
-      </Hero>
+      <StaticQuery
+        query={graphql`
+          {
+            bg: file(relativePath: { eq: "images/reno.jpg" }) {
+              childImageSharp {
+                fluid(maxWidth: 1600) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        `}
+        render={data => {
+          console.log('\nDATA: ', data, '\n')
+          return (
+            <Hero style={{
+              // backgroundImage:
+              //  linearGradient(
+              //   '0deg',
+              //   rgba(0, 0, 0, 0.8),
+              //   rgba(0, 0, 0, 0.9)
+              // ),
+              // url(${data.bg.childImageSharp.fluid.srcSet})
+            }}>
+              <Img alt="reno arch" fluid={data.bg.childImageSharp.fluid} />
+              <TypeWrapper>
+                <h1>
+                  Sean Pheneger : &nbsp;
+                  <Span
+                    ref={el => {
+                      this.el = el
+                    }}
+                  />
+                </h1>
+                <Intro>Welcome To My Website.</Intro>
+                <Subheading>
+                  This is a continuing work containing references, links to my
+                  projects and articles I write about what I learn in my journey
+                  as a developer.
+                </Subheading>
+              </TypeWrapper>
+            </Hero>
+          )
+        }}
+      />
     )
   }
 }

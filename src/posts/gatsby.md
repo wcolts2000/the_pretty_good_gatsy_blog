@@ -291,6 +291,69 @@ function Blog(props) {
 export default Blog
 ```
 
+ **ADDING IMAGES INTO GRAPHQL TO UTILIZE GATSBY-SHARP FOR DYNAMIC OPTIMIZED IMAGES:**
+    make sure you have the plugins `gatsby-image` `gatsby-transformer-sharp` and `gatsby-plugin-sharp` and in the gatsby-config.js add the following to the plugins array:
+
+    ```
+    ['gatsby-plugin-sharp',
+    'gatsby-transformer-sharp']
+    ```
+    make sure that you are sourcing the path to your images folder with an object in the plugins array of config-js as follows:
+
+    ```
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    }
+    ```
+    you can access the images in a graphql query similar to the following:
+
+    ```
+    {
+      allFile(filter: {relativeDirectory: {eq: "images"}}) {
+        edges {
+          node {
+            relativePath
+            childImageSharp {
+              fluid(maxWidth: 1600) {
+                srcSet
+              }
+            }
+          }
+        }
+      }
+    }
+    ```
+ in the component you want to grab from sharp add the following import: 
+ ```
+ import {StaticQuery, graphql} from 'gatsby';
+ import Img from 'gatsby-image';
+ ```
+ and add it to the jsx as the wrapper component with query and render props as follows:
+ ```
+  <StaticQuery query={} render={} />
+ ```
+ putting inside the render prop the jsx you want rendered in that component and you will add the query similar to the following into the query prop:
+ ```
+  {
+    bg: file(relativePath: {eq: "images/bg.jpg"}) {
+          childImageSharp {
+            fluid(maxWidth: 1600) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+    }
+  }
+```
+inside the jsx in the render prop add your image tag from gatsby-image as follows:
+```
+<Img alt="reno arch" fluid={data.bg.childImageSharp.fluid} />
+```
+
+
  **ADDING IMAGES TO MD POSTS:**
  
    add gatsby-plugin-sharp , gatsby-remark-images, and gatsby-remark-relative-images  like follows:   `npm install gatsby-plugin-sharp gatsby-remark-images gatsby-remark-relative-images`  -> add string "gatsby-plugin-sharp" to gatsby-config.js plugins array and modify "gatsby-transformer-remark" to be an object as follows:  
