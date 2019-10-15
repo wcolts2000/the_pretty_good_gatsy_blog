@@ -8,8 +8,8 @@ import Img from 'gatsby-image'
 const Hero = styled.div`
   font-family: 'Railway', sans-serif;
   position: relative;
-  height: 600px;
   width: 100%;
+  height: 600px;
   overflow: hidden;
   color: #ccc;
   text-shadow: -2px 2px 2px #000;
@@ -99,8 +99,8 @@ class TypeWriterDiv extends Component {
           {
             bg: file(relativePath: { eq: "images/reno.jpg" }) {
               childImageSharp {
-                fluid(maxWidth: 1600) {
-                  ...GatsbyImageSharpFluid
+                fixed(height: 600) {
+                  ...GatsbyImageSharpFixed
                 }
               }
             }
@@ -118,7 +118,7 @@ class TypeWriterDiv extends Component {
               // ),
               // url(${data.bg.childImageSharp.fluid.srcSet})
             }}>
-              <Img alt="reno arch" fluid={data.bg.childImageSharp.fluid} />
+              <Img alt="reno arch" fixed={data.bg.childImageSharp.fixed} />
               <TypeWrapper>
                 <h1>
                   Sean Pheneger : &nbsp;
@@ -130,9 +130,7 @@ class TypeWriterDiv extends Component {
                 </h1>
                 <Intro>Welcome To My Website.</Intro>
                 <Subheading>
-                  This is a continuing work containing references, links to my
-                  projects and articles I write about what I learn in my journey
-                  as a developer.
+                  References, Projects Links and Blogs from a developer.
                 </Subheading>
               </TypeWrapper>
             </Hero>
