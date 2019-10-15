@@ -60,7 +60,9 @@ const Layout = ({ children }) => (
       <>
         <div className={layoutStyles.wrapper}>
           <Header siteTitle={data.site.siteMetadata.title} />
-            {children}
+            <div className={layoutStyles.container}>
+              {children}
+            </div>
         </div>
         <Footer />
       </>
