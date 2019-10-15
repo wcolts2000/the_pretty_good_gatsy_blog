@@ -3,6 +3,7 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/layout'
 import Head from '../components/head'
+import blogStyles from './blog.module.scss'
 
 const References = () => {
   const data = useStaticQuery(graphql`
@@ -26,16 +27,18 @@ const References = () => {
   return (
     <Layout>
       <Head title="Contentful CMS Blog" />
-      <h1>Blogs and Code Snippets</h1>
-      <p>A compilation of cool techniques and snippets I have found useful</p>
-      <ol>
-        {data.allContentfulBlogPost.edges.map((post, i) => (
-          <Link key={i} to={`references/${post.node.slug}`}>
-            <li><h2>{post.node.title} </h2>
-            <p> <date>{post.node.publishedDate}</date></p></li>
-          </Link>
-        ))} 
-      </ol>
+      <section className={blogStyles.container}>
+        <h1>Blogs and Code Snippets</h1>
+        <p>A compilation of cool techniques and snippets I have found useful</p>
+        <ol>
+          {data.allContentfulBlogPost.edges.map((post, i) => (
+            <Link key={i} to={`references/${post.node.slug}`}>
+              <li><h2>{post.node.title} </h2>
+              <p> <date>{post.node.publishedDate}</date></p></li>
+            </Link>
+          ))} 
+        </ol>
+      </section>
     </Layout> 
   )
 }
