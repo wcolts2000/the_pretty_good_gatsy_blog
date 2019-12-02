@@ -9,7 +9,11 @@ const Technologies = () => (
   <Layout>
     <Head title="Technologies" />
     <div className={techStyles.flip}>
-      <FlipPage height="430" width="580" orientation="horizontal" pageBackground="#D9B89100">
+      {typeof window === "undefined" ?
+        <div>Loading...</div>
+      :
+        (
+          <FlipPage height="430" width="580" orientation="horizontal" pageBackground="#D9B89100">
         <section className={techStyles.container}>
           <h1>Various Tech Stacks and Library References and Notes</h1>
           <p>Here you will find information about various javascript and python libraries and fundamentals</p>
@@ -18,7 +22,8 @@ const Technologies = () => (
           <h1>Various Tech Stacks and Library References and Notes</h1>
           <p>Here you will find information about various javascript and python libraries and fundamentals</p>
         </section>
-      </FlipPage>
+      </FlipPage>)
+      }}
     </div>
   </Layout>
 )
