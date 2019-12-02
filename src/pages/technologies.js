@@ -5,11 +5,7 @@ import FlipPage from 'react-flip-page'
 import Layout from '../components/layout'
 import Head from '../components/head'
 
-const Technologies = () => {
-  if (typeof window === 'undefined') {
-    global.window = {}
-  }
-  return (
+const Technologies = () => (
   <Layout>
     <Head title="Technologies" />
     <div className={techStyles.flip}>
@@ -25,6 +21,6 @@ const Technologies = () => {
       </FlipPage>
     </div>
   </Layout>
-)}
+)
 
 export default Technologies
