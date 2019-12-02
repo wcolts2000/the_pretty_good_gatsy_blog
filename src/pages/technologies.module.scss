@@ -1,4 +1,22 @@
+.flip {
+  width: 580px;
+  height: 430px;
+  border: 1px solid red;
+  background-image: url(./../images/book.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .container {
-  background: white;
+  // background: white;
+  background-image: url(./../images/book-pages.png);
+  height: 97%;
+  width: 93%;
+  // margin-left: 1%;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 1rem;
+  margin: .2rem 1.25rem ;
+  columns: 2;
 }
