@@ -511,7 +511,7 @@ export default Blog
 
  **THIRD PARTY PACKAGE REQUIRES WINDOW OBJECT THROWING ERROR:**
     
-    Inside the gatsby-node.js file add the following config replacing `/bad-package/` with the package name requiring the window object:
+Inside the gatsby-node.js file add the following config replacing `/bad-package/` with the package name requiring the window object:
 
     ```
     exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
