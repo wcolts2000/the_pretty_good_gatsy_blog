@@ -513,22 +513,20 @@ export default Blog
     
 Inside the gatsby-node.js file add the following config replacing `/bad-package/` with the package name requiring the window object:
 
-    ```
     exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
     if (stage === "build-html") {
       actions.setWebpackConfig({
-        module: {
-          rules: [
-            {
-              test: /bad-package/,
-              use: loaders.null(),
-            },
-          ],
-        },
-      })
+          module: {
+            rules: [
+              {
+                test: /bad-package/,
+                use: loaders.null(),
+              },
+            ],
+          },
+        })
+      }
     }
-  }
-    ```
  
  **DYNAMICALLY ADD HEAD DATA VIA REACT HELMET:**
  
