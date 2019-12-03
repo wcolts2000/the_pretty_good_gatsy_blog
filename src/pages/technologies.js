@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import techStyles from './technologies.module.scss'
 
 
-import FlipPage from 'react-flip-page'
+// import FlipPage from 'react-flip-page'
 import Layout from '../components/layout'
 import Head from '../components/head'
 
