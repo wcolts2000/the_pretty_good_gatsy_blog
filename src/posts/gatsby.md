@@ -509,6 +509,27 @@ export default Blog
  
    create a 404.js file in pages -> add any custom content, styles and links back to pages that exist
 
+ **THIRD PARTY PACKAGE REQUIRES WINDOW OBJECT THROWING ERROR:**
+    
+    Inside the gatsby-node.js file add the following config replacing `/bad-package/` with the package name requiring the window object:
+
+    ```
+    exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+    if (stage === "build-html") {
+      actions.setWebpackConfig({
+        module: {
+          rules: [
+            {
+              test: /bad-package/,
+              use: loaders.null(),
+            },
+          ],
+        },
+      })
+    }
+  }
+    ```
+ 
  **DYNAMICALLY ADD HEAD DATA VIA REACT HELMET:**
  
    stop server and add gatsby-plugin-react-helmet and react-helmet as follows: npm install gatsby-plugin-react-helmet react-helmet -> add plugin to gatsby-config.js plugins array as a string: 'gatsby-plugin-react-helmet'  -> create a head.js file and add the info you want to dynamically insert to each page as seen in the following example:
