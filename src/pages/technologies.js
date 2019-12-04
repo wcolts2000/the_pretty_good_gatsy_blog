@@ -1,43 +1,28 @@
-import React, { Component } from 'react'
+import React from 'react'
 import techStyles from './technologies.module.scss'
 import Layout from '../components/layout'
 import Head from '../components/head'
 
 import FlipPage from 'react-flip-page'
 
-class Technologies extends Component {
-state = {
- jsx: ""
-}
-  componentDidMount() {
-
-    this.setState({jsx: <FlipPage height="430" width="580" orientation="horizontal" pageBackground="#D9B89100">
-    <section className={techStyles.container}>
-      <h1>Various Tech Stacks and Library References and Notes</h1>
-      <p>Here you will find information about various javascript and python libraries and fundamentals</p>
-    </section>
-    <section className={techStyles.container}>
-      <h1>Various Tech Stacks and Library References and Notes</h1>
-      <p>Here you will find information about various javascript and python libraries and fundamentals</p>
-    </section>
-  </FlipPage>})
-  }
-  
-  makeComponent = jsx => {
-    return jsx
-  }
-
-  render() {
-    return (
-      <Layout>
-        <Head title="Technologies" />
-        <div className={techStyles.flip}>
-          {this.makeComponent(this.state.jsx)
-          }
-        </div>
-      </Layout>
-    )
-  }
+const Technologies = () => {
+  return (
+    <Layout>
+      <Head title="Technologies" />
+      <div className={techStyles.flip}>
+        <FlipPage height="700" width="1000" orientation="horizontal" pageBackground="#D9B89100">
+          <section className={techStyles.container}>
+            <h1>Various Tech Stacks and Library References and Notes</h1>
+            <p>Here you will find information about various javascript and python libraries and fundamentals</p>
+          </section>
+          <section className={techStyles.container}>
+            <h1>Various Tech Stacks and Library References and Notes</h1>
+            <p>Here you will find information about various javascript and python libraries and fundamentals</p>
+          </section>
+        </FlipPage>
+      </div>
+    </Layout>
+  )
 }
 
 export default Technologies

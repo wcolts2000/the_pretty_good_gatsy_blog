@@ -1,7 +1,7 @@
 .flip {
-  width: 580px;
-  height: 430px;
-  border: 1px solid red;
+  margin: 5rem auto 0;
+  width: 1000px;
+  height: 700px;
   background-image: url(./../images/book.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -9,14 +9,12 @@
 }
 
 .container {
-  // background: white;
   background-image: url(./../images/book-pages.png);
   height: 97%;
-  width: 93%;
-  // margin-left: 1%;
+  width: 86%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 1rem;
-  margin: .2rem 1.25rem ;
+  padding: 2.75rem;
+  margin: .2rem 4.2rem ;
   columns: 2;
 }
