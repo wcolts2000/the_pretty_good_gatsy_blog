@@ -10,7 +10,7 @@ state = {
  jsx: ""
 }
   componentDidMount() {
-    // requried to add library after component has mounted as this library needs access to window object and in server side render build will fail
+    // required to add library after component has mounted as this library needs access to window object and in server side render build will fail
     this.setState({jsx: <FlipPage height="700" width="1000" orientation="horizontal" pageBackground="#D9B89100">
     <section className={techStyles.container}>
       <h1>Various Tech Stacks and Library References and Notes</h1>

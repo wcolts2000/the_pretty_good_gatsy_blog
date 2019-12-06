@@ -527,6 +527,8 @@ Inside the gatsby-node.js file add the following config replacing `/bad-package/
         })
       }
     }
+
+In addition to setting the package in the test rules, you may also need to render the component from the offending library by putting it into the componentDidMount lifecycle or a useEffect on mountin
  
  **DYNAMICALLY ADD HEAD DATA VIA REACT HELMET:**
  
