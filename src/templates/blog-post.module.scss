@@ -4,6 +4,8 @@
   margin: 0 auto;
   background: darken(lightseagreen, 10%);
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 pre {
@@ -68,4 +70,10 @@ tr {
 td {
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
+}
+
+img {
+  width:100%;
+  height: auto;
+  max-width: 300px;
 }
