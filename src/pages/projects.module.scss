@@ -2,6 +2,17 @@
   background: white;
   padding: 1rem;
 
+  h1 {
+    text-align: center;
+    padding: 3rem;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('./../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   .projects {
     display: flex;
     flex-wrap: wrap;

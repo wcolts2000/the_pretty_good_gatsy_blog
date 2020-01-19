@@ -30,7 +30,7 @@ const Projects = () => {
         <Layout>
           <Head title="My Projects" />
           <div className={projectsStyles.container}>
-            <h1>Some of my projects</h1>
+            <h1>Some of My Projects</h1>
             <section className={projectsStyles.projects}>
               <div className={projectsStyles.projectWrapper}>
                 <Img
