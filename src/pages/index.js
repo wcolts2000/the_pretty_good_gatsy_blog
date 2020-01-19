@@ -40,7 +40,7 @@ const IndexPage = () => (
         />
         <FlatCard
           title="Blog"
-          body="notes from my research, tutorials, and classes"
+          body="blogs and snippets"
           icon="book-reader"
           color="lightgreen"
           linkTo="blog"
@@ -48,7 +48,7 @@ const IndexPage = () => (
         <FlatCard
           title="About Me"
           color="rebeccapurple"
-          body="A little insite into my journal as a developer"
+          body="A little insight into my journey as a developer"
           icon="portrait"
           linkTo="overview"
         />
