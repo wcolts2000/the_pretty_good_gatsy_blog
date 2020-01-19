@@ -1,4 +1,64 @@
 .container {
   background: white;
   padding: 1rem;
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .projectWrapper {
+    flex: 0 1 100%;
+    border: 1px solid black;
+    display: flex;
+
+    .project {
+      padding: 1rem;
+      display: flex;
+      width: 50%;
+
+      .left {
+        width: 50%;
+      }
+
+      .right {
+        width: 50%;
+        ul {
+          box-shadow: none;
+          padding: 0.5rem 2rem;
+          background: none;
+          margin: 0;
+          list-style: square;
+        }
+
+        a {
+          padding: 0.5rem 1rem;
+          margin: 1rem 0.2rem;
+          font-weight: bold;
+          text-decoration: none;
+          color: white;
+          background: black;
+          border: 1px solid black;
+          text-transform: uppercase;
+          font-family: sans-serif;
+          transition: all 0.3s;
+
+          &:hover {
+            background: white;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+
+  .screenshot {
+    width: 50%;
+    border-right: 1px solid black;
+  }
+
+  .screenshotLeft {
+    width: 50%;
+    border-left: 1px solid black;
+    order: 1;
+  }
 }

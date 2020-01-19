@@ -17,7 +17,7 @@ import {
   faTools,
   faAsterisk,
   faLaptopCode,
-  faPortrait
+  faPortrait,
 } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import Footer from './Footer/footer'
@@ -60,9 +60,7 @@ const Layout = ({ children }) => (
       <>
         <div className={layoutStyles.wrapper}>
           <Header siteTitle={data.site.siteMetadata.title} />
-            <div className={layoutStyles.container}>
-              {children}
-            </div>
+          <div className={layoutStyles.container}>{children}</div>
         </div>
         <Footer />
       </>
