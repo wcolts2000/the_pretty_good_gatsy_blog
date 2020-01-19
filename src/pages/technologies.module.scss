@@ -1,20 +1,88 @@
-.flip {
-  margin: 5rem auto 0;
-  width: 1000px;
-  height: 700px;
-  // background-image: url(./../images/book.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .container {
-  // background-image: url(./../images/book-pages.png);
-  height: 97%;
-  width: 86%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 2.75rem;
-  margin: .2rem 4.2rem ;
-  columns: 2;
+  padding: 1rem;
+  background: white;
+
+  h1 {
+    text-align: center;
+    padding: 3rem;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('./../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  p {
+    padding: 0.5rem;
+  }
+
+  .resourceHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background: rgb(235, 235, 235);
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    .ytIcon {
+      font-size: 5rem;
+      color: red;
+      margin-right: 2rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin: 0 auto 2rem;
+      color: red;
+      text-align: center;
+    }
+  }
+
+  .frameWrapper {
+    display: flex;
+
+    .tags {
+      margin-left: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      font-size: 0.8rem;
+
+      h3 {
+        margin: 0 0 0.2rem;
+      }
+
+      p {
+        margin: 0.2rem;
+        padding: 0.25rem 0.5rem;
+        color: white;
+        background: red;
+        border-radius: 50px;
+        text-align: center;
+      }
+    }
+  }
+
+  h3 a {
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      color: black;
+      background: white;
+    }
+  }
+
+  .summary {
+    padding-bottom: 2rem;
+    border-bottom: 1px dashed black;
+  }
 }

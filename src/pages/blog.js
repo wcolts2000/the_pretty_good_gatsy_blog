@@ -24,7 +24,12 @@ const References = () => {
       <Head title="Contentful CMS Blog" />
       <section className={blogStyles.container}>
         <h1>Blog Posts</h1>
-        <p>A compilation of cool techniques and snippets I have found useful</p>
+        <p>
+          This page pulls the data from Contentful CMS and generates the static
+          pages from whatever I upload there. Very user friendly interface that
+          a client can easily add content to their sites with out writing a
+          single line of code.
+        </p>
         <ol>
           {data.allContentfulBlogPost.edges.map((post, i) => (
             <Link key={i} to={`references/${post.node.slug}`}>
