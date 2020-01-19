@@ -5,6 +5,9 @@ function ResourceCard({ vidUrl, topics, channelLink, channelName, summary }) {
   return (
     <>
       <div className={techStyles.frameWrapper}>
+        <h3>
+          <a href={channelLink}>{channelName}</a>
+        </h3>
         <iframe
           width="420"
           height="236"
@@ -20,9 +23,6 @@ function ResourceCard({ vidUrl, topics, channelLink, channelName, summary }) {
           ))}
         </div>
       </div>
-      <h3>
-        <a href={channelLink}>{channelName}</a>
-      </h3>
       <p className={techStyles.summary}>{summary}</p>
     </>
   )

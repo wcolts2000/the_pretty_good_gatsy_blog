@@ -43,6 +43,7 @@
 
   .frameWrapper {
     display: flex;
+    flex-wrap: wrap;
 
     .tags {
       margin-left: 1.6rem;
@@ -63,6 +64,10 @@
         text-align: center;
       }
     }
+  }
+
+  h3 {
+    width: 100%;
   }
 
   h3 a {
