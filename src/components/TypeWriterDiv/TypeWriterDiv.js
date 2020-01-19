@@ -99,7 +99,7 @@ class TypeWriterDiv extends Component {
           {
             bg: file(relativePath: { eq: "images/reno.jpg" }) {
               childImageSharp {
-                fixed(height: 600) {
+                fixed(width: 1800) {
                   ...GatsbyImageSharpFixed
                 }
               }
@@ -109,15 +109,19 @@ class TypeWriterDiv extends Component {
         render={data => {
           console.log('\nDATA: ', data, '\n')
           return (
-            <Hero style={{
-              // backgroundImage:
-              //  linearGradient(
-              //   '0deg',
-              //   rgba(0, 0, 0, 0.8),
-              //   rgba(0, 0, 0, 0.9)
-              // ),
-              // url(${data.bg.childImageSharp.fluid.srcSet})
-            }}>
+            <Hero
+              style={
+                {
+                  // backgroundImage:
+                  //  linearGradient(
+                  //   '0deg',
+                  //   rgba(0, 0, 0, 0.8),
+                  //   rgba(0, 0, 0, 0.9)
+                  // ),
+                  // url(${data.bg.childImageSharp.fluid.srcSet})
+                }
+              }
+            >
               <Img alt="reno arch" fixed={data.bg.childImageSharp.fixed} />
               <TypeWrapper>
                 <h1>
