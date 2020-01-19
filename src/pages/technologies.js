@@ -53,7 +53,7 @@ const Technologies = () => {
           channelName="Traversy Media"
           summary="Brad Traversy has one of the most informative coding channels for beginner to intermediate developers
           I have come across. He covers nearly everything you could think about with regards to being a web developer, from 
-          fundamentals to frameworks to mental health as a progammer. If you have not subscribed and liked his channel and 
+          fundamentals to frameworks to mental health as a programmer. If you have not subscribed and liked his channel and 
           videos, don't do another thing before going over and giving his content a look. I also have numerous Udemy courses
           from him as I love his teaching style and the projects he builds out are fun and have good UIs as well."
         />
