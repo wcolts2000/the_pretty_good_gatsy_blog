@@ -16,16 +16,31 @@
   .projects {
     display: flex;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
   }
   .projectWrapper {
-    flex: 0 1 100%;
+    flex: 1 0 100%;
     border: 1px solid black;
     display: flex;
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+      img {
+        object-position: top center !important;
+        height: unset !important;
+      }
+    }
 
     .project {
       padding: 1rem;
       display: flex;
       width: 50%;
+
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+      }
 
       .left {
         width: 50%;
@@ -65,11 +80,27 @@
   .screenshot {
     width: 50%;
     border-right: 1px solid black;
+
+    @media screen and (max-width: 1000px) {
+      width: 100%;
+      image {
+        object-position: top center !important;
+        height: unset !important;
+      }
+    }
   }
 
   .screenshotLeft {
     width: 50%;
     border-left: 1px solid black;
     order: 1;
+    @media screen and (max-width: 1000px) {
+      width: 100%;
+      order: 0;
+      image {
+        object-position: top center !important;
+        height: unset !important;
+      }
+    }
   }
 }
