@@ -1,5 +1,5 @@
 import React from 'react'
-import techStyles from '../../pages/technologies.module.scss'
+import techStyles from '../../pages/resources.module.scss'
 
 function ResourceCard({ vidUrl, topics, channelLink, channelName, summary }) {
   return (

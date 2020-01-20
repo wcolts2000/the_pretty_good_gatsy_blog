@@ -1,25 +1,25 @@
 import React from 'react'
-import overviewStyles from './overview.module.scss'
+import aboutStyles from './about.module.scss'
 
 import Layout from '../components/layout'
 import Head from '../components/head'
 
-const Overview = () => (
+const About = () => (
   <Layout>
     <Head title="About Me" />
-    <div className={overviewStyles.overviewContainer}>
-      <div className={overviewStyles.overviewIntro}>
+    <div className={aboutStyles.aboutContainer}>
+      <div className={aboutStyles.aboutIntro}>
         <h1>A Little About Me...</h1>
         <h2>
           So how in the world did I end up wanting to learn web development?
         </h2>
       </div>
       <img
-        className={overviewStyles.overviewImg}
+        className={aboutStyles.aboutImg}
         src="https://images.pexels.com/photos/326424/pexels-photo-326424.jpeg?auto=compress&cs=tinysrgb&h=350"
         alt="desk with computer and notepad"
       />
-      <div className={overviewStyles.overviewIntroContainer}>
+      <div className={aboutStyles.aboutIntroContainer}>
         <p>
           I was hired on at a large format printing company that was just
           starting up back in 2013 to be a sales rep for their wholesale
@@ -70,15 +70,15 @@ const Overview = () => (
           he had picked up years before...
         </p>
       </div>
-      <h2 className={overviewStyles.facePalmHeader}>
+      <h2 className={aboutStyles.facePalmHeader}>
         Wait wait wait... did you read that right? Years before?{' '}
       </h2>
       <img
         src="https://images.pexels.com/photos/23180/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
         alt="man holding his face"
-        className={overviewStyles.facePalm}
+        className={aboutStyles.facePalm}
       />
-      <div className={overviewStyles.containerRight}>
+      <div className={aboutStyles.containerRight}>
         <p>
           Well my friend, thats right. What he knew was how to use photoshop and
           the slice tool and bring that into Adobe Dreamweaver CS6 and convert
@@ -94,7 +94,7 @@ const Overview = () => (
           it and for that I am eternally grateful.
         </p>
       </div>
-      <div className={overviewStyles.whatsNext}>
+      <div className={aboutStyles.whatsNext}>
         <h2>Ok, so now that I have some interest in it, what next?</h2>
         <p>
           Well, sad to say, there was actually a couple websites that went out
@@ -149,7 +149,7 @@ const Overview = () => (
           interesting tuition model and curriculum.
         </p>
       </div>
-      <div className={overviewStyles.lambdaIntro}>
+      <div className={aboutStyles.lambdaIntro}>
         <h2>Enter Lambda...</h2>
         <p>
           So Lambda offers a free 2 week web development mini boot camp that
@@ -169,7 +169,7 @@ const Overview = () => (
           few of the ones that were thought highly of have gone under.
         </p>
       </div>
-      <div className={overviewStyles.wrapUp}>
+      <div className={aboutStyles.wrapUp}>
         <h2>So what makes Lambda different?</h2>
         <img
           src="https://images.pexels.com/photos/997725/pexels-photo-997725.jpeg?auto=compress&cs=tinysrgb&h=350"
@@ -245,7 +245,13 @@ const Overview = () => (
           Course, an Android Development and Computer Science Course, an IOS
           Development and Computer Science Course, a UX Design Course, and are
           looking to expand even more. For more info on these check out{' '}
-          <a href="https://lambdaschool.com/about/" target="_blank" rel="noopener noreferrer">Lambda School's Website</a>{' '}
+          <a
+            href="https://lambdaschool.com/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Lambda School's Website
+          </a>{' '}
           yourself to see what they have to offer. I would highly recommend it,
           even for those coming in with no prior knowledge at all, as there are
           quite a few in every cohort that comes through and lambda has done an
@@ -256,4 +262,4 @@ const Overview = () => (
   </Layout>
 )
 
-export default Overview
+export default About

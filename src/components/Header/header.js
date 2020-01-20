@@ -25,17 +25,17 @@ const Header = () => {
           <Link className={headerStyles.headerNav} to="/projects/">
             Projects
           </Link>
-          <Link className={headerStyles.headerNav} to="/references/">
+          <Link className={headerStyles.headerNav} to="/notes/">
             Notes
           </Link>
-          <Link className={headerStyles.headerNav} to="/technologies/">
-            Tools
+          <Link className={headerStyles.headerNav} to="/resources/">
+            Resources
           </Link>
           <Link to="/blog/" className={headerStyles.headerNav}>
             Blog
           </Link>
           <Link
-            to="/overview/"
+            to="/about/"
             className={`${headerStyles.headerNav} ${headerStyles.top}`}
             style={{ paddingRight: '0' }}
           >

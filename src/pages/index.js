@@ -14,7 +14,7 @@ const IndexPage = () => (
     />
     <section className={indexStyles.hyperlinkContainer}>
       <h1 className={indexStyles.indexHeader}>
-        Notes, Projects, Tools, References, About Me
+        Projects, Notes, Resources, Blog, About Me
       </h1>
       <div className={indexStyles.linksCardsContainer}>
         <FlatCard
@@ -29,14 +29,14 @@ const IndexPage = () => (
           color="red"
           body="notes from classes and personal study"
           icon="asterisk"
-          linkTo="references"
+          linkTo="notes"
         />
         <FlatCard
           title="Tools"
           color="orange"
           body="my dev tools and cheat sheets"
           icon="tools"
-          linkTo="technologies"
+          linkTo="resources"
         />
         <FlatCard
           title="Blog"
@@ -50,7 +50,7 @@ const IndexPage = () => (
           color="rebeccapurple"
           body="A little insight into my journey as a developer"
           icon="portrait"
-          linkTo="overview"
+          linkTo="about"
         />
       </div>
     </section>

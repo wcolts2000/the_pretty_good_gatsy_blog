@@ -1,14 +1,14 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import techStyles from './technologies.module.scss'
+import techStyles from './resources.module.scss'
 import Layout from '../components/layout'
 import Head from '../components/head'
-import ResourceCard from './../components/Technologies/ResourceCard'
+import ResourceCard from './../components/resources/ResourceCard'
 
-const Technologies = () => {
+const Resources = () => {
   return (
     <Layout>
-      <Head title="Technologies" />
+      <Head title="Resources" />
       <section className={techStyles.container}>
         <h1>Useful Resources and Links</h1>
         <p>
@@ -149,4 +149,4 @@ const Technologies = () => {
   )
 }
 
-export default Technologies
+export default Resources

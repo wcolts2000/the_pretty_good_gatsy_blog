@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import Head from '../components/head'
 import blogStyles from './blog.module.scss'
 
-const References = () => {
+const Blog = () => {
   const data = useStaticQuery(graphql`
     query {
       allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
@@ -32,7 +32,7 @@ const References = () => {
         </p>
         <ol>
           {data.allContentfulBlogPost.edges.map((post, i) => (
-            <Link key={i} to={`references/${post.node.slug}`}>
+            <Link key={i} to={`blog/${post.node.slug}`}>
               <li>
                 <h2>{post.node.title} </h2>
                 <p>
@@ -48,4 +48,4 @@ const References = () => {
   )
 }
 
-export default References
+export default Blog
