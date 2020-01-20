@@ -7,7 +7,6 @@ import './footer.css'
 const FooterComponent = styled.footer``
 
 const Footer = () => {
-
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -35,7 +34,11 @@ const Footer = () => {
           <FontAwesomeIcon className="footer-icon" icon={['fab', 'linkedin']} />
         </a>
       </div>
-      <h4>&copy; 2018 with &#9829; by {data.site.siteMetadata.author}</h4>
+      <h4>
+        <a href="https://www.seanpheneger.dev">
+          &copy; 2020 with &#9829; by {data.site.siteMetadata.author}
+        </a>
+      </h4>
     </FooterComponent>
   )
 }
