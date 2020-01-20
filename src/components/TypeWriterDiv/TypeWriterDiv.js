@@ -21,6 +21,25 @@ const Hero = styled.div`
     right: 0;
     bottom: 0;
   }
+
+  a {
+    margin-top: 1rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    z-index: 10000;
+
+    &:hover {
+      color: black;
+      background: white;
+    }
+  }
 `
 
 const TypeWrapper = styled.div`
@@ -109,19 +128,7 @@ class TypeWriterDiv extends Component {
         render={data => {
           console.log('\nDATA: ', data, '\n')
           return (
-            <Hero
-              style={
-                {
-                  // backgroundImage:
-                  //  linearGradient(
-                  //   '0deg',
-                  //   rgba(0, 0, 0, 0.8),
-                  //   rgba(0, 0, 0, 0.9)
-                  // ),
-                  // url(${data.bg.childImageSharp.fluid.srcSet})
-                }
-              }
-            >
+            <Hero>
               <Img alt="reno arch" fixed={data.bg.childImageSharp.fixed} />
               <TypeWrapper>
                 <h1>
@@ -135,6 +142,10 @@ class TypeWriterDiv extends Component {
                 <Intro>Welcome To My Website.</Intro>
                 <Subheading>
                   References, Projects Links and Blogs from a developer.
+                  <br />
+                  <a href="https://seanpheneger.dev" className="portLink">
+                    Visit My Portfolio
+                  </a>
                 </Subheading>
               </TypeWrapper>
             </Hero>
