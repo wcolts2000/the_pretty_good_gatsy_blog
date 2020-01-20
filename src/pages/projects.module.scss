@@ -29,7 +29,6 @@
       flex-direction: column;
       img {
         object-position: top center !important;
-        height: unset !important;
       }
     }
 
@@ -82,11 +81,8 @@
     border-right: 1px solid black;
 
     @media screen and (max-width: 1000px) {
+      border-right: none;
       width: 100%;
-      image {
-        object-position: top center !important;
-        height: unset !important;
-      }
     }
   }
 
@@ -95,12 +91,9 @@
     border-left: 1px solid black;
     order: 1;
     @media screen and (max-width: 1000px) {
+      border-left: none;
       width: 100%;
       order: 0;
-      image {
-        object-position: top center !important;
-        height: unset !important;
-      }
     }
   }
 }
