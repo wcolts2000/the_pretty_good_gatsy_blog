@@ -32,9 +32,9 @@ const IndexPage = () => (
           linkTo="notes"
         />
         <FlatCard
-          title="Tools"
+          title="Resources"
           color="orange"
-          body="my dev tools and cheat sheets"
+          body="resources, tools, and cheat sheets"
           icon="tools"
           linkTo="resources"
         />
