@@ -27,7 +27,7 @@ const Footer = () => {
           <FontAwesomeIcon className="footer-icon" icon={['fab', 'github']} />
         </a>
         <a
-          href="https://www.linkedin.com/in/sean-pheneger-5393a089/"
+          href="https://www.linkedin.com/in/sean-pheneger/"
           target="_blank"
           rel="noopener noreferrer"
         >
